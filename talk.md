@@ -2,11 +2,7 @@
 % https://github.com/STL2600/web-auth-talk
 % ![Link to Talk](images/qr-code.png) 
 
-# Questions?
-
 # Bearer Tokens / JWT
-
-# Overview
 
 ## Differences
 
@@ -135,6 +131,14 @@ eyJpc3MiOiJodHRwczovL2xvZ2luLm15LXdlYnNpdGUuY29tLyIsImlhdCI6MTY0NjQwODExNiwiZXhw
 
  - You can use symmetric encryption to sign the token
  - Avoid this, as it means any service that can validate tokens, can also create them
+
+# General Advice
+
+ - For simple apps, stick to cookies
+ - Use an identity provider when possible
+ - Don't roll your own crypto
+
+# Questions?
 
 ![Link to Talk](images/qr-code.png) 
 
