@@ -18,11 +18,15 @@
 
 ## Header
 
-`{ "alg": "RS256", "typ": "JWT" }`
+```
+{ "alg": "RS256", "typ": "JWT" }
+```
 
 encodes to
 
-`eyAiYWxnIjogIlJTMjU2IiwgInR5cCI6ICJKV1QiIH0`
+```
+eyAiYWxnIjogIlJTMjU2IiwgInR5cCI6ICJKV1QiIH0
+```
 
 ## Payload
 
@@ -40,7 +44,11 @@ encodes to
 encodes to
 
 ```
-eyJpc3MiOiJodHRwczovL2xvZ2luLm15LXdlYnNpdGUuY29tLyIsImlhdCI6MTY0NjQwODExNiwiZXhwIjoxNjQ2NDA5MzE2LCJhdWQiOiJodHRwczovL215LXdlYnNpdGUuY29tLyIsInVzZXJuYW1lIjoid2Vic2l0ZUFkbWluQWNjb3VudCIsImlzQWRtaW4iOnRydWV9Cg
+eyJpc3MiOiJodHRwczovL2xvZ2luLm15LXdlYnNpdGUuY29tLy
+IsImlhdCI6MTY0NjQwODExNiwiZXhwIjoxNjQ2NDA5MzE2LCJh
+dWQiOiJodHRwczovL215LXdlYnNpdGUuY29tLyIsInVzZXJuYW
+1lIjoid2Vic2l0ZUFkbWluQWNjb3VudCIsImlzQWRtaW4iOnRy
+dWV9Cg
 ```
 
 ## Signature
@@ -49,11 +57,25 @@ eyJpc3MiOiJodHRwczovL2xvZ2luLm15LXdlYnNpdGUuY29tLyIsImlhdCI6MTY0NjQwODExNiwiZXhw
 
 ## Full Token
 
-`eyAiYWxnIjogIlJTMjU2IiwgInR5cCI6ICJKV1QiIH0.eyJpc3MiOiJodHRwczovL2xvZ2luLm15LXdlYnNpdGUuY29tLyIsImlhdCI6MTY0NjQwODExNiwiZXhwIjoxNjQ2NDA5MzE2LCJhdWQiOiJodHRwczovL215LXdlYnNpdGUuY29tLyIsInVzZXJuYW1lIjoid2Vic2l0ZUFkbWluQWNjb3VudCIsImlzQWRtaW4iOnRydWV9Cg.<SIGNATURE>`
+```
+eyAiYWxnIjogIlJTMjU2IiwgInR5cCI6ICJKV1QiIH0.eyJpc3
+MiOiJodHRwczovL2xvZ2luLm15LXdlYnNpdGUuY29tLyIsImlh
+dCI6MTY0NjQwODExNiwiZXhwIjoxNjQ2NDA5MzE2LCJhdWQiOi
+JodHRwczovL215LXdlYnNpdGUuY29tLyIsInVzZXJuYW1lIjoi
+d2Vic2l0ZUFkbWluQWNjb3VudCIsImlzQWRtaW4iOnRydWV9Cg
+.<SIGNATURE>
+```
 
 ## HTTP Header
 
-`Authorization: Bearer eyAiYWxnIjogIlJTMjU2IiwgInR5cCI6ICJKV1QiIH0.eyJpc3MiOiJodHRwczovL2xvZ2luLm15LXdlYnNpdGUuY29tLyIsImlhdCI6MTY0NjQwODExNiwiZXhwIjoxNjQ2NDA5MzE2LCJhdWQiOiJodHRwczovL215LXdlYnNpdGUuY29tLyIsInVzZXJuYW1lIjoid2Vic2l0ZUFkbWluQWNjb3VudCIsImlzQWRtaW4iOnRydWV9Cg.<SIGNATURE>`
+```
+Authorization: Bearer eyAiYWxnIjogIlJTMjU2IiwgInR5
+cCI6ICJKV1QiIH0.eyJpc3MiOiJodHRwczovL2xvZ2luLm15LX
+dlYnNpdGUuY29tLyIsImlhdCI6MTY0NjQwODExNiwiZXhwIjox
+NjQ2NDA5MzE2LCJhdWQiOiJodHRwczovL215LXdlYnNpdGUuY2
+9tLyIsInVzZXJuYW1lIjoid2Vic2l0ZUFkbWluQWNjb3VudCIs
+ImlzQWRtaW4iOnRydWV9Cg.<SIGNATURE>
+```
 
 ## Claims - Standard
 
@@ -61,7 +83,7 @@ eyJpc3MiOiJodHRwczovL2xvZ2luLm15LXdlYnNpdGUuY29tLyIsImlhdCI6MTY0NjQwODExNiwiZXhw
  - `sub` Subject: Identifies the subject of the JWT.
  - `aud` Audience: Identifies the recipients that the JWT is intended for.
  - `exp` Expiration Time: Identifies the expiration time on and after which the JWT must not be accepted
- - `iat` Issued at: Identifies the time at which the JWT was issued. The value must be a NumericDate.
+ - `iat` Issued at: Identifies the time at which the JWT was issued
 
 ## Claims - Custom
 
